@@ -1,0 +1,17 @@
+bitbot.move(BBMotor.Left, BBDirection.Forward, 60)
+bitbot.move(BBMotor.Right, BBDirection.Reverse, 60)
+bitbot.setLedColor(0xFF0080)
+bitbot.goms(BBDirection.Forward, 100, 10000)
+bitbot.rotatems(BBRobotDirection.Left, 100, 5000)
+bitbot.stop(BBStopMode.Coast)
+bitbot.buzz(true)
+basic.pause(100)
+bitbot.buzz(false)
+bitbot.move(BBMotor.Left, BBDirection.Forward, 28)
+bitbot.move(BBMotor.Right, BBDirection.Reverse, 28)
+bitbot.goms(BBDirection.Forward, 60, 100000)
+bitbot.ledRainbow()
+basic.clearScreen()
+basic.forever(function () {
+	
+})
